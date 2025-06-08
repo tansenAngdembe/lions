@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+@import "react-day-picker/dist/style.css";
+
+
+@theme{
+  --color-primary: #00529B;
+  --color-secondary: #FAB130;
+  --color-header: #00529B;
+  --color-footer: #0D2240;
+  --color-heading: #2268A3;
+  --color-button: #F8A22B;
+  --color-info: #868686;
+}
+
+
+
+
+/* .card {
+  @apply absolute top-full left-0 mt-2 w-max bg-white text-black rounded-md shadow-md opacity-0 invisible group-hover:opacity-100  group-hover:visible transition duration-500 z-50;
+} */
+
+/* body{
+  font-family: 'Open Sans', sans-serif;
+  
+} */
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+

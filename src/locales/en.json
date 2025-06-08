@@ -1,0 +1,64 @@
+{
+    "header": {
+        "home": "Home",
+        "teams": {
+            "title": "Our Team",
+            "digi-team": {
+                "heading": "Digi Team",
+                "current": "Current Digi Team",
+                "past-governer": "Past District Governer"
+            },
+            "cabinet-officials": {
+                "heading": "Cabinet Officials",
+                "senior": "Senior Officials",
+                "cluster-head": "Cluster Head and Deputy Head",
+                "region": "Region Chairperson",
+                "zone": "Zone Chairperson",
+                "global": "Global Causes Team",
+                "digi-program": "Digi Program Team"
+            },
+            "leo-district": {
+                "heading": "Leo District",
+                "council": "Leo District Council",
+                "club": "Leo Clubs"
+            }
+        },
+        "clubs": "Clubs",
+        "resources": "Resources",
+        "login": "Login"
+    },
+    "body": {
+        "root-page": {
+            "heading": "Who We are?",
+            "description": "Lions International District 325 K, under the designation Lions International Club, is a recognized and active branch of Lions Clubs International established in Nepal, dedicated to community service and humanitarian efforts. Through its structured network, Lions District 325 K serves as a powerful platform for individuals to contribute meaningfully to society and make a lasting impact in Nepal and beyond."
+        },
+        "calender": "Event Calender",
+        "card": {
+            "blog-card": {
+                "title": "Blogs"
+            }
+        }
+    },
+    "footers": {
+        "info": "Lions Clubs International is a renowned service organization founded by Melvin Jones in 1917. It has become one of the world’s leading and most active service club organizations. ",
+        "pages": {
+            "heading": "Pages",
+            "home": "Home",
+            "teams": "Our Team",
+            "blog": "Blog"
+        },
+        "utility": {
+            "heading": "Utility",
+            "clubs": "Clubs",
+            "resources": "Resources",
+            "login": "Login"
+        },
+        "mission-info": {
+            "heading": "Support Our Mission",
+            "description": "Your contribution helps us continue our work, Enter your email to receive a receipt and updates.",
+            "donate-button": "DONATE"
+        },
+        "privacy-policy": "Privacy Policy",
+        "term-service": "Terms of Service"
+    }
+}
