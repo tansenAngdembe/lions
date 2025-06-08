@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_DOC } from '../../config';
 
 const ClubCard = ({ clubs }) => {
   return (
@@ -17,7 +18,7 @@ const ClubCard = ({ clubs }) => {
           }}
         >
           <img 
-            src={logoUrl || "/images/logo.svg"} 
+            src={`${BASE_DOC}${logoUrl}` || "/images/logo.svg"} 
             alt="logo" 
             className="w-8 h-8 object-contain" 
           />

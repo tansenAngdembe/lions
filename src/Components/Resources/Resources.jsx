@@ -28,6 +28,13 @@ const Resources = () => {
     resource.category.toLowerCase().includes(query.toLowerCase())
   );
 
+  const downloadFile =async (filePath)=>{
+    const fileUrl =  `${BASE_DOC}${filePath}`;
+  console.log("Opening:", fileUrl); 
+ window.open(fileUrl, "_blank");
+
+  }
+
   if (loading) {
     return <div className="flex justify-center items-center h-screen">Loading...</div>;
   }
@@ -72,15 +79,14 @@ const Resources = () => {
                     <span className='text-sm text-gray-500'>{category}</span>
                   </div>
                 </div>
-                <a
-                  href={filePath}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className='flex items-center gap-2 text-blue-600 text-sm hover:underline'
+                  <button
+                  key={id}
+                  className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors"
+                  onClick={()=>downloadFile(filePath)}
                 >
-                  <Download size={18} />
-                  View
-                </a>
+                   <Download size={18} />
+                    View
+                </button>
               </div>
             ))
           ) : query ? (
@@ -105,14 +111,14 @@ const Resources = () => {
                   </div>
                 </div>
 
-                <div
+                <button
                   key={id}
                   className="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors"
-                  onClick={() => window.open(`${BASE_DOC}${filePath}`, '_blank')}
+                  onClick={()=>downloadFile(filePath)}
                 >
                    <Download size={18} />
-                   View
-                </div>
+                    View
+                </button>
                 
               </div>
             ))
