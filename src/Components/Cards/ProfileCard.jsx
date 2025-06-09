@@ -17,27 +17,27 @@ const ProfileCard = () => {
         // Get the current path and map it to the appropriate API endpoint
         const path = location.pathname;
         let endpoint = ""; // default endpoint
-
+      
 
         // Map routes to specific endpoints
         const routeToEndpoint = {
-          "/currentDigTeam":"currentDigTeam",
-          "/pastDigTeam":"pastDigiTeam",
-          "/seniorOfficials": "seniorOfficials", 
-          "/clusterHeadDeputyHead": "clusterHeadDeputyHead",
-          "/regionChairPerson": "regionChairPerson",
-          "/zoneChairPerson": "zoneChairPerson",
-          "/globalCausesTeam": "globalCausesTeam",
-          "/digiProgramTeam": "digiProgramTeam",
-          "/leoDistrict":"leoDistrict"   
-             };
+          "/currentDigTeam": "CURRENTDIGITEAM",
+          "/pastDigTeam": "PASTEDDIGITEAM",
+          "/seniorOfficials": "SENIORROFFICIALS",
+          "/clusterHeadDeputyHead": "CLUSTERHEADDEPUTYHEAD",
+          "/regionChairPerson": "REGIONCHAIRPERSON",
+          "/zoneChairPerson": "ZONECHAIRPERSON",
+          "/globalCausesTeam": "GLOBALCAUSESTEAM",
+          "/digiProgramTeam": "DIGIPROGRAMTEAM",
+          "/leoDistrict": "LEODISTRICT"
+        };
 
         if (routeToEndpoint[path]) {
           endpoint = routeToEndpoint[path];
         }
 
-        const response = await axios.post(`${BASE_URL}get-profiles-by-category`,{
-          categoryName:endpoint
+        const response = await axios.post(`${BASE_URL}get-profiles-by-category`, {
+          categoryName: endpoint
         });
         console.log(response.data)
         setMembers(response.data.data);
@@ -52,7 +52,7 @@ const ProfileCard = () => {
 
     fetchMembers();
   }, [location.pathname]);
- if (loading) {
+  if (loading) {
     return (
       <div className="h-[50vh] w-full flex flex-col items-center justify-center">
         <Loader2 className="w-12 h-12 text-primary animate-spin" />
@@ -66,8 +66,8 @@ const ProfileCard = () => {
       <div className="h-[50vh] w-full  flex flex-col items-center justify-center">
         <AlertCircle className="w-12 h-12 text-red-500" />
         <p className="mt-4 text-lg text-red-500">{error}</p>
-        <button 
-          onClick={() => window.location.reload()} 
+        <button
+          onClick={() => window.location.reload()}
           className="mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
         >
           Try Again
@@ -76,18 +76,18 @@ const ProfileCard = () => {
     );
   }
 
-  
- if (members.length === 0) {
+
+  if (members.length === 0) {
+    return (
+      <div className="h-[50vh] w-full flex flex-col items-center justify-center">
+        <AlertCircle className="w-12 h-12 text-gray-400" />
+        <p className="mt-4 text-lg text-gray-600">Currently there are no members</p>
+      </div>
+    );
+  }
   return (
-    <div className="h-[50vh] w-full flex flex-col items-center justify-center">
-      <AlertCircle className="w-12 h-12 text-gray-400" />
-      <p className="mt-4 text-lg text-gray-600">Currently there are no members</p>
-    </div>
-  );
-}
-  return (
-    <div  className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 bg-white rounded-lg '>
-      {members.map(({ fullName, position, phoneNumber, email, memberNumber, address,image }) => (
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 bg-white rounded-lg '>
+      {members.map(({ fullName, position, phoneNumber, email, memberNumber, address, image }) => (
         <motion.div
           key={memberNumber}
           className="w-full max-w-sm bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -97,12 +97,12 @@ const ProfileCard = () => {
           whileHover={{ y: -5 }}
         >
           <div className="w-full">
-           <img
-                src={`${BASE_DOC}${image}`}
-                alt="Profile"
-                onError={(e) => (e.target.src = '/fallback.jpg')}
-                className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-105"
-              />
+            <img
+              src={`${BASE_DOC}${image}`}
+              alt="Profile"
+              onError={(e) => (e.target.src = '/fallback.jpg')}
+              className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
           <div className="p-6">
             <div className="space-y-4">
