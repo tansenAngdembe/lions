@@ -21,8 +21,8 @@ const ProfileCard = () => {
 
         // Map routes to specific endpoints
         const routeToEndpoint = {
-          "/currentDigTeam": "CURRENTDIGITEAM",
-          "/pastDigTeam": "PASTEDDIGITEAM",
+          "/currentDigiTeam": "CURRENTDIGITEAM",
+          "/pastDigiTeam": "PASTEDDIGITEAM",
           "/seniorOfficials": "SENIORROFFICIALS",
           "/clusterHeadDeputyHead": "CLUSTERHEADDEPUTYHEAD",
           "/regionChairPerson": "REGIONCHAIRPERSON",
