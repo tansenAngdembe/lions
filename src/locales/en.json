@@ -9,12 +9,13 @@
                 "past-governer": "Past District Governer"
             },
             "cabinet-officials": {
-                "heading": "Cabinet Officials",
-                "senior": "Senior Officials",
-                "cluster-head": "Cluster Head and Deputy Head",
+                "heading": "Cabinet Officers",
+                "senior": "Senior Officers",
+                "global": "Global Causes Team",
+                "cluster-head": "Area Leaders",
+                "gat":"GAT Team",
                 "region": "Region Chairperson",
                 "zone": "Zone Chairperson",
-                "global": "Global Causes Team",
                 "digi-program": "DG Program Team"
             },
             "leo-district": {
