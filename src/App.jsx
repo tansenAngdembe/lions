@@ -18,6 +18,7 @@ import PageNotFound from "./Components/PageNotFound/PageNotFound.jsx";
 import "./App.css";
 import LioAi from "./LionAi/LioAi.jsx";
 import LionsAboutPage from "./Components/Home/AboutUs.jsx";
+import GatTeam from "./Components/DigiTeam/GatTeam.jsx";
 
 function App() {
   return (
@@ -25,19 +26,20 @@ function App() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />
-          <Route path="currentDigiTeam" element={<CurrentDigiTeam />} />
-          <Route path="pastDigiTeam" element={<PastDigiTeam />} />
-          <Route path="seniorOfficials" element={<SeniorOfficials />} />
-          <Route path="clusterHeadDeputyHead" element={<ClusterHead_DeputyHead />} />
+          <Route path="currentDgTeam" element={<CurrentDigiTeam />} />
+          <Route path="pastDgTeam" element={<PastDigiTeam />} />
+          <Route path="seniorOfficers" element={<SeniorOfficials />} />
+          <Route path="areaLeaders" element={<ClusterHead_DeputyHead />} />
           <Route path="regionChairPerson" element={<RegionChairPerson />} />
           <Route path="zoneChairPerson" element={<ZoneChairPerson />} />
           <Route path="globalCausesTeam" element={<GlobalCausesTeam />} />
-          <Route path="digiProgramTeam" element={<DigiProgramTeam />} />
+          <Route path="dgProgramTeam" element={<DigiProgramTeam />} />
           <Route path="leoDistrict" element={<LeoDistrict />} />
           <Route path="clubs" element={<Clubs />} />
           <Route path="leoClubs" element={<LeoClubs />} />
           <Route path="resources" element={<Resources />} />
           <Route path="aboutUs" element={<LionsAboutPage/>}/>
+          <Route path="gatTeam" element={<GatTeam/>}/>
 
           <Route path="blog" element={<Blog />} />
           <Route path="lio_ai" element={<LioAi />} />

@@ -70,24 +70,26 @@ const Nav = () => {
     { label:t("header.home"), link: "/" },
     {
       label:  t("header.teams.title"),
-      link: "/currentDigiTeam",
+      link: "/currentDgTeam",
       submenu: [
         {
           title:  t("header.teams.digi-team.heading"),
           items: [
-            { label: t("header.teams.digi-team.current"), link: "/currentDigiTeam" },
-            { label: t("header.teams.digi-team.past-governer"), link: "/pastDigiTeam" },
+            { label: t("header.teams.digi-team.current"), link: "/currentDGTeam" },
+            { label: t("header.teams.digi-team.past-governer"), link: "/pastDgTeam" },
           ],
         },
         {
           title:t("header.teams.cabinet-officials.heading"),
           items: [
-            { label:t("header.teams.cabinet-officials.senior"), link: "/seniorOfficials" },
-            { label:  t("header.teams.cabinet-officials.cluster-head"), link: "/clusterHeadDeputyHead" },
+            { label:t("header.teams.cabinet-officials.senior"), link: "/seniorOfficers" },
+            { label:  t("header.teams.cabinet-officials.cluster-head"), link: "/areaLeaders" },
+            {lable: t("header.teams.cabinet-officials.gat"), link: "/gatTeam"},
             { label: t("header.teams.cabinet-officials.region"), link: "/regionChairPerson" },
             { label: t("header.teams.cabinet-officials.zone"), link: "/zoneChairPerson" },
+
             { label:  t("header.teams.cabinet-officials.global"), link: "/globalCausesTeam" },
-            { label: t("header.teams.cabinet-officials.digi-program"), link: "/digiProgramTeam" },
+            { label: t("header.teams.cabinet-officials.digi-program"), link: "/dgProgramTeam" },
           ],
         },
         {

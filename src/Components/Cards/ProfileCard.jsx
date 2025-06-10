@@ -21,15 +21,16 @@ const ProfileCard = () => {
 
         // Map routes to specific endpoints
         const routeToEndpoint = {
-          "/currentDigiTeam": "CURRENTDIGITEAM",
-          "/pastDigiTeam": "PASTEDDIGITEAM",
-          "/seniorOfficials": "SENIORROFFICIALS",
-          "/clusterHeadDeputyHead": "CLUSTERHEADDEPUTYHEAD",
+          "/currentDGTeam": "CURRENTDIGITEAM",
+          "/pastDgTeam": "PASTEDDIGITEAM",
+          "/seniorOfficers": "SENIORROFFICIALS",         
           "/regionChairPerson": "REGIONCHAIRPERSON",
           "/zoneChairPerson": "ZONECHAIRPERSON",
           "/globalCausesTeam": "GLOBALCAUSESTEAM",
-          "/digiProgramTeam": "DIGIPROGRAMTEAM",
-          "/leoDistrict": "LEODISTRICT"
+          "/dgProgramTeam": "DIGIPROGRAMTEAM",
+          "/leoDistrict": "LEODISTRICT",
+          "/areaLeaders":"AREALEADER",
+          "/gatTeam":"GATTEAM"
         };
 
         if (routeToEndpoint[path]) {
@@ -77,7 +78,7 @@ const ProfileCard = () => {
   }
 
 
-  if (members.length === 0) {
+  if (members?.length === 0) {
     return (
       <div className="h-[50vh] w-full flex flex-col items-center justify-center">
         <AlertCircle className="w-12 h-12 text-gray-400" />
@@ -87,7 +88,7 @@ const ProfileCard = () => {
   }
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 bg-white rounded-lg '>
-      {members.map(({ fullName, position, phoneNumber, email, memberNumber, address, image }) => (
+      {members?.map(({ fullName, position, phoneNumber, email, memberNumber, address, image }) => (
         <motion.div
           key={memberNumber}
           className="w-full max-w-sm bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"

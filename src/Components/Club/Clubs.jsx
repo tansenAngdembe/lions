@@ -25,7 +25,7 @@ const Clubs = () => {
     fetchClubs();
   }, []);
 
-  const filteredClubs = clubs.filter(club =>
+  const filteredClubs = clubs?.filter(club =>
     club.clubName.toLowerCase().includes(query.toLowerCase()) ||
     club.clubId.toLowerCase().includes(query.toLowerCase()) ||
     club.districtMultiple.toLowerCase().includes(query.toLowerCase())
@@ -34,8 +34,8 @@ const Clubs = () => {
   // Pagination logic
   const indexOfLastClub = currentPage * entriesPerPage;
   const indexOfFirstClub = indexOfLastClub - entriesPerPage;
-  const currentClubs = filteredClubs.slice(indexOfFirstClub, indexOfLastClub);
-  const totalPages = Math.ceil(filteredClubs.length / entriesPerPage);
+  const currentClubs = filteredClubs?.slice(indexOfFirstClub, indexOfLastClub);
+  const totalPages = Math.ceil(filteredClubs?.length / entriesPerPage);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -94,7 +94,7 @@ const Clubs = () => {
         </div>
 
         <div className='flex flex-col justify-center items-center xl:p-10 gap-4 w-full max-w-6xl'>
-          {filteredClubs.length > 0 ? (
+          {filteredClubs?.length > 0 ? (
             <>
               {/* Table */}
               <div className="w-full overflow-x-auto bg-white rounded-xl shadow-sm">
@@ -109,7 +109,7 @@ const Clubs = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {currentClubs.map((club) => (
+                    {currentClubs?.map((club) => (
                       <tr key={club.clubId} className="hover:bg-gray-50">
                         <td className="px-6 py-4 whitespace-nowrap">
                           <img 
@@ -136,7 +136,7 @@ const Clubs = () => {
                 <div className="text-sm text-gray-700">
                   Showing <span className="font-medium">{indexOfFirstClub + 1}</span> to{' '}
                   <span className="font-medium">{Math.min(indexOfLastClub, filteredClubs.length)}</span> of{' '}
-                  <span className="font-medium">{filteredClubs.length}</span> entries
+                  <span className="font-medium">{filteredClubs?.length}</span> entries
                 </div>
                 
                 <div className="flex items-center gap-2">
@@ -211,7 +211,7 @@ const Clubs = () => {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {clubs.map((club) => (
+                  {clubs?.map((club) => (
                     <tr key={club.clubId} className="hover:bg-gray-50">
                       <td className="px-6 py-4 whitespace-nowrap">
                         <img 
