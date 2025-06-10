@@ -56,16 +56,16 @@ const Test = () => {
       <div className="min-h-screen w-full justify-center mx-auto px-4 sm:px-6 lg:px-8 py-8  bg-[#00529B] place-content-center">
         <div className=" bg-[#00529B]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <h1 className="text-3xl font-bold text-gray-900 text-center">
+            <h1 className="text-3xl font-bold text-white text-center">
               {t("body.calender")}
             </h1>
           </div>
         </div>
         <div className="flex flex-col xl:flex-row gap-8 xl:gap-16 items-start justify-center">
           {/* Calendar Section */}
-          <div className="w-full xl:w-auto bg-white p-6 rounded-xl shadow-sm">
+          <div className="w-full  xl:w-auto bg-white p-6 rounded-xl shadow-sm">
             <DayPicker
-              className="[&_.rdp-day]:font-bold  [&_.rdp-day]:tracking-wide"
+              className="[&.rdp-day]:font-bold [&.rdp-day]:tracking-wide"
               selected={selectedDate}
               onDayClick={handleDateSelect}
               modifiers={{
@@ -74,20 +74,14 @@ const Test = () => {
               modifiersStyles={{
                 event: {
                   backgroundColor: "red",
-                  marginTop:"8px",
-                  marginLeft:"6px",
-                  fontWeight: "normal", // or "lighter"
-                  width: "27px",
-                  height: "27px",
-                  borderRadius: "50%",
-                  display: "flex",
+                  fontWeight: "normal",
+                  width: "20px",
+                  height: "20px",
+                  borderRadius: "50%",                 
                   alignItems: "center",
                   justifyContent: "center",
-                  
-                  // margin: "auto",
-                  // fontSize: "0.75rem",             
-
-              },
+                  margin: "auto", // This helps center it in the cell
+                },
               }}
             />
           </div>

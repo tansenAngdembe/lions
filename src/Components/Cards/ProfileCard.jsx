@@ -89,13 +89,10 @@ const ProfileCard = () => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 p-4 sm:p-6 bg-white rounded-lg '>
       {members?.map(({ fullName, position, phoneNumber, email, memberNumber, address, image }) => (
-        <motion.div
+        <div
           key={memberNumber}
           className="w-full max-w-sm bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          whileHover={{ y: -5 }}
+          
         >
           <div className="w-full  ">
             <img
@@ -135,7 +132,7 @@ const ProfileCard = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       ))}
     </div>
   );
