@@ -305,29 +305,29 @@ export default function LionsAboutPage() {
       </div>
 
       {/* Sustainable Development Goals */}
-      <div className="py-16" style={{ backgroundColor: '#00529B' }}>
+      <div className="py-16" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-6xl mx-auto px-6 text-white">
-          <h2 className="text-3xl font-bold text-center mb-8">Supporting UN Sustainable Development Goals</h2>
-          <p className="text-lg text-center mb-12 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8" style={{ color: '#00529B' }}>Supporting UN Sustainable Development Goals</h2>
+          <p className="text-lg text-center mb-12 max-w-4xl mx-auto" style={{ color: '#4a5565' }}>
             Lions Clubs International is committed to supporting the United Nations Sustainable Development Goals 
             through our global service framework and local community action.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="text-xl font-semibold mb-3">Good Health and Well-being</h3>
-              <p className="text-sm">
+            <div className="bg-[#f2f3f5] backdrop-blur-sm p-6 rounded-lg  shadow-md">
+              <h3 className="text-xl font-semibold mb-3" style={{ color: '#00529B' }}>Good Health and Well-being</h3>
+              <p className="text-sm" style={{ color: '#4a5565' }}>
                 Supporting healthcare initiatives, vision programs, and health education in underserved communities.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="text-xl font-semibold mb-3">Quality Education</h3>
-              <p className="text-sm">
+            <div className="bg-[#f2f3f5] backdrop-blur-sm p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3" style={{ color: '#00529B' }}>Quality Education</h3>
+              <p className="text-sm" style={{ color: '#4a5565' }}>
                 Providing educational opportunities, literacy programs, and scholarship support for youth worldwide.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="text-xl font-semibold mb-3">Clean Water and Sanitation</h3>
-              <p className="text-sm">
+            <div className="bg-[#f2f3f5] backdrop-blur-sm p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3" style={{ color: '#00529B' }}>Clean Water and Sanitation</h3>
+              <p className="text-sm" style={{ color: '#4a5565' }}>
                 Ensuring access to clean water and sanitation facilities in communities that need them most.
               </p>
             </div>

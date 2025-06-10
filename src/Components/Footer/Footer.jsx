@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="w-max">
                 <img className="w-20" src="/logo/logo.svg" alt="organization logo" />
               </div>
-              <div className="flex flex-col items-start justify-center text-sm text-gray-500 font-bold">
+              <div className="flex flex-col items-start justify-center text-xs text-secondary font-bold pl-1 sm:pl-0">
                 <p>Lions International</p>
                 <p>District 325k (MD 325) Nepal</p>
                 <p>L/Y 2025-2026</p>
@@ -39,7 +39,7 @@ const Footer = () => {
           <div className='flex flex-col gap-1'>
             <NavLink to="/">{t("footers.pages.home")}</NavLink>
             <NavLink to="/currentDigiTeam">{t("footers.pages.teams")}</NavLink>
-            <NavLink to="/blog">{t("footers.pages.teams")}</NavLink>
+            <NavLink to="/blog">{t("footers.pages.blog")}</NavLink>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className='flex flex-col gap-1'>
             <NavLink to="/clubs">{t("footers.utility.clubs")}</NavLink>
             <NavLink to="/resources">{t("footers.utility.resources")}</NavLink>
-            <a href="#">{t("footers.utility.login")}</a>
+            <a href="https://lionsinternational.my.site.com/s/login/?language=en_US">{t("footers.utility.login")}</a>
           </div>
         </div>
 
