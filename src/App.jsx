@@ -17,6 +17,7 @@ import Blog from "./Components/Home/Blog.jsx";
 import PageNotFound from "./Components/PageNotFound/PageNotFound.jsx";
 import "./App.css";
 import LioAi from "./LionAi/LioAi.jsx";
+import LionsAboutPage from "./Components/Home/AboutUs.jsx";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
           <Route path="clubs" element={<Clubs />} />
           <Route path="leoClubs" element={<LeoClubs />} />
           <Route path="resources" element={<Resources />} />
+          <Route path="aboutUs" element={<LionsAboutPage/>}/>
+
           <Route path="blog" element={<Blog />} />
           <Route path="lio_ai" element={<LioAi />} />
           <Route path="*" element={<PageNotFound />} />

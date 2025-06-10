@@ -98,9 +98,9 @@ const ProfileCard = () => {
         >
           <div className="w-full">
             <img
-              src={`${BASE_DOC}${image}`}
+              src={`${BASE_DOC}/${image}`}
               alt="Profile"
-              onError={(e) => (e.target.src = '/fallback.jpg')}
+              // onError={(e) => (e.target.src = '/fallback.jpg')}
               className="w-full h-48 object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-105"
             />
           </div>

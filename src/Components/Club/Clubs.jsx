@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import ClubCard from '../Cards/ClubCard'
 import axios from 'axios'
 import { Search, X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { BASE_DOC, BASE_URL } from '../../config';
 
 const Clubs = () => {
   const [query, setQuery] = useState("");
@@ -13,7 +13,7 @@ const Clubs = () => {
   useEffect(() => {
     const fetchClubs = async () => {
       try {
-        const response = await axios.post('http://localhost:8080/api/v1/public/get-all-clubs');
+        const response = await axios.post(`${BASE_URL}get-all-clubs`);
         setClubs(response.data.data);
         setLoading(false);
       } catch (error) {
@@ -27,7 +27,8 @@ const Clubs = () => {
 
   const filteredClubs = clubs.filter(club =>
     club.clubName.toLowerCase().includes(query.toLowerCase()) ||
-    club.clubId.toLowerCase().includes(query.toLowerCase())
+    club.clubId.toLowerCase().includes(query.toLowerCase()) ||
+    club.districtMultiple.toLowerCase().includes(query.toLowerCase())
   );
 
   // Pagination logic
@@ -45,14 +46,12 @@ const Clubs = () => {
     setCurrentPage(1);
   };
 
-  if (loading) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>;
-  }
+ 
 
   return (
-    <div className='min-h-screen flex flex-col bg-gray-50'>
-      <div className='flex-1 flex flex-col items-center justify-start pt-40 pb-10'>
-        <div className="w-full max-w-4xl mb-2 px-4">
+    <div className='min-h-screen mt-33 flex flex-col bg-gray-50'>     
+      <div className='flex-1 flex flex-col items-center justify-start pt-10 pb-10'>
+        <div className="w-full max-w-6xl mb-2 px-4">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white p-4 rounded-xl shadow-sm">
             {/* Entries per page selector */}
             <div className="flex items-center gap-2">
@@ -77,7 +76,7 @@ const Clubs = () => {
               </div>
               <input
                 type="text"
-                placeholder="Search by club name or ID..."
+                placeholder="Search by club name, ID, or district..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 className="w-full pl-10 pr-10 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-50"
@@ -94,49 +93,101 @@ const Clubs = () => {
           </div>
         </div>
 
-        <div className='flex flex-col justify-center items-center xl:p-10 gap-4 w-full'>
+        <div className='flex flex-col justify-center items-center xl:p-10 gap-4 w-full max-w-6xl'>
           {filteredClubs.length > 0 ? (
             <>
-              <ClubCard clubs={currentClubs} />
-              
-              {/* Pagination */}
-              <div className="flex items-center gap-2 mt-2 bg-white p-4 rounded-xl shadow-sm">
-                <button
-                  onClick={() => handlePageChange(currentPage - 1)}
-                  disabled={currentPage === 1}
-                  className="p-2 rounded-lg border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
-                >
-                  <ChevronLeft size={20} className="text-gray-600" />
-                </button>
-                
-                {[...Array(totalPages)].map((_, index) => (
-                  <button
-                    key={index + 1}
-                    onClick={() => handlePageChange(index + 1)}
-                    className={`px-4 py-2 rounded-lg transition-all ${
-                      currentPage === index + 1
-                        ? 'bg-blue-500 text-white shadow-sm'
-                        : 'border border-gray-200 hover:bg-gray-50 text-gray-700'
-                    }`}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
-
-                <button
-                  onClick={() => handlePageChange(currentPage + 1)}
-                  disabled={currentPage === totalPages}
-                  className="p-2 rounded-lg border border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
-                >
-                  <ChevronRight size={20} className="text-gray-600" />
-                </button>
+              {/* Table */}
+              <div className="w-full overflow-x-auto bg-white rounded-xl shadow-sm">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-gray-50 border-b border-gray-200">
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Logo</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Club ID</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Club Name</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">District</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Extension Chairperson</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {currentClubs.map((club) => (
+                      <tr key={club.clubId} className="hover:bg-gray-50">
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <img 
+                            src={`${BASE_DOC}/${club.logoUrl}`}
+                            alt={`${club.clubName} logo`}
+                            className="h-12 w-12 rounded-full object-cover"
+                            onError={(e) => {
+                              e.target.onerror = null;
+                            }}
+                          />
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.clubId}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.clubName}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.districtMultiple}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.extensionChairperson}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
+              
+              {/* Updated Pagination */}
+              <div className="flex items-center justify-between w-full bg-white p-4 rounded-xl shadow-sm mt-2">
+                <div className="text-sm text-gray-700">
+                  Showing <span className="font-medium">{indexOfFirstClub + 1}</span> to{' '}
+                  <span className="font-medium">{Math.min(indexOfLastClub, filteredClubs.length)}</span> of{' '}
+                  <span className="font-medium">{filteredClubs.length}</span> entries
+                </div>
+                
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="px-3 py-1 rounded-md border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Previous
+                  </button>
+                  
+                  <div className="flex items-center gap-1">
+                    {[...Array(totalPages)].map((_, index) => {
+                      const pageNumber = index + 1;
+                      // Show first page, last page, current page, and pages around current page
+                      if (
+                        pageNumber === 1 ||
+                        pageNumber === totalPages ||
+                        (pageNumber >= currentPage - 1 && pageNumber <= currentPage + 1)
+                      ) {
+                        return (
+                          <button
+                            key={pageNumber}
+                            onClick={() => handlePageChange(pageNumber)}
+                            className={`px-3 py-1 rounded-md text-sm font-medium ${
+                              currentPage === pageNumber
+                                ? 'bg-blue-500 text-white'
+                                : 'border border-gray-300 text-gray-700 hover:bg-gray-50'
+                            }`}
+                          >
+                            {pageNumber}
+                          </button>
+                        );
+                      } else if (
+                        pageNumber === currentPage - 2 ||
+                        pageNumber === currentPage + 2
+                      ) {
+                        return <span key={pageNumber} className="px-2">...</span>;
+                      }
+                      return null;
+                    })}
+                  </div>
 
-              {/* Page info */}
-              <div className="text-sm text-gray-600 mt-2 bg-white px-4 py-2 rounded-lg shadow-sm">
-                Showing <span className="font-medium">{indexOfFirstClub + 1}</span> to{' '}
-                <span className="font-medium">{Math.min(indexOfLastClub, filteredClubs.length)}</span> of{' '}
-                <span className="font-medium">{filteredClubs.length}</span> entries
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="px-3 py-1 rounded-md border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
             </>
           ) : query ? (
@@ -148,7 +199,40 @@ const Clubs = () => {
               </p>
             </div>
           ) : (
-            <ClubCard clubs={clubs} />
+            <div className="w-full overflow-x-auto bg-white rounded-xl shadow-sm">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gray-50 border-b border-gray-200">
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Logo</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Club ID</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Club Name</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">District</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Extension Chairperson</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {clubs.map((club) => (
+                    <tr key={club.clubId} className="hover:bg-gray-50">
+                      <td className="px-6 py-4 whitespace-nowrap">
+                        <img 
+                          src={`${BASE_DOC}/${club.logoUrl}`}
+                          alt={`${club.clubName} logo`}
+                          className="h-12 w-12 rounded-full object-cover"
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = 'https://via.placeholder.com/48';
+                          }}
+                        />
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.clubId}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.clubName}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.districtMultiple}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{club.extensionChairperson}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           )}
         </div>
       </div>

@@ -101,6 +101,7 @@ const Nav = () => {
     },
     { label: t("header.clubs"), link: "/clubs" },
     { label: t("header.resources"), link: "/resources" },
+    {label:t("header.aboutUs"),link:"/aboutUs"},
     { label: t("header.login"), link: "https://lionsinternational.my.site.com/s/login/?language=en_US", isButton: true , target:"_blank"},
   ];
 

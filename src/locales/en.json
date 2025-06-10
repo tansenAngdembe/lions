@@ -25,6 +25,7 @@
         },
         "clubs": "Clubs",
         "resources": "Resources",
+        "aboutUs": "About Us",
         "login": "Login"
     },
     "body": {
@@ -36,6 +37,83 @@
         "card": {
             "blog-card": {
                 "title": "Blogs"
+            }
+        }
+    },
+    "aboutUs": {
+        "serve": {
+            "title": "We Serve",
+            "discription": "For over 100 years, Lions Clubs International has been empowering volunteers to serve their communities, meet humanitarian needs, encourage peace and promote international understanding.",
+            "buttonText": "JOIN OUR MISSION",
+            "title2": "We're on a mission.",
+            "discription2": "To empower Lions clubs, volunteers and partners to improve health and well-being, strengthen communities, and support those in need through humanitarian service and grants that impact lives globally, and encourage peace and international understanding.",
+            "clubCards": {
+                "card1": "Lions Clubs International",
+                "discription": "Founded in 1917, we are the world's largest service club organization with 1.4 million members in over 48,000 clubs across 200+ countries and geographic areas. Our members are dedicated to creating positive change in communities worldwide.",
+                "card2": "Lions Clubs International Foundation",
+                "discription2": "LCIF is the charitable arm of Lions Clubs International, funding humanitarian projects globally. Since 1968, LCIF has awarded over $1 billion in grants to support Lions' service efforts and disaster relief initiatives worldwide."
+            }
+        },
+        "globalCauses": {
+            "title": "Our Global Causes",
+            "vision": "Vision",
+            "visionDiscription": "Fighting preventable blindness and improving quality of life for people who are blind or visually impaired.",
+            "hunger": "Hunger",
+            "hungerDiscription": "Ensuring access to nutritious food and clean water while addressing food insecurity in communities.",
+            "environment": "Environment",
+            "environmentDescription": "Protecting and restoring our environment through sustainable community-based environmental projects.",
+            "diabetes": "Reducing the prevalence of diabetes and improving quality of life for those diagnosed.",
+            "card": {
+                "visionCare": "Vision Care",
+                "visionCareDis": "Providing eye exams and treatments worldwide",
+                "hungerRelief": "",
+                "hungerReliefDis": "Fighting hunger in local communities",
+                "env": "Environment",
+                "envDes": "Protecting our planet for future generations"
+            }
+        },
+        "peopleLooking": {
+            "title": "We're looking for people like you.",
+            "card": {
+                "card1": {
+                    "title": "Member experience",
+                    "text": "Join a global network",
+                    "discription": "When you join Lions, you become part of a global network of volunteers working together to make a difference. You'll develop leadership skills, build lasting friendships, and create positive change in your community and beyond.",
+                    "buttonText": "Learn to Join"
+                },
+                "card2": {
+                    "title": "Club and membership types",
+                    "text": "Find your fit",
+                    "discription": "Lions clubs come in many forms - traditional, specialty, family, campus, and online clubs. Whether you have 30 minutes or 3 hours to volunteer, there's a way for you to make an impact through Lions.",
+                    "buttonText": "Learn more"
+                },
+                "card3": {
+                    "title": "Where we serve",
+                    "discription": "Lions serve in over 200 countries and geographic areas worldwide. From small rural communities to major metropolitan areas, Lions are working to address local needs while supporting global initiatives.",
+                    "buttonText": "Learn more"
+                },
+                "card4": {
+                    "title": "How we serve",
+                    "discription": "Through hands-on service, fundraising, and awareness campaigns, Lions tackle challenges in health, education, environment, and community development. We partner with organizations worldwide to maximize our impact.",
+                    "buttonText": "Learn more"
+                }
+            }
+        },
+        "lives": {
+            "title": "Lions change lives, including their own.",
+            "card": {
+                "card1": {
+                    "title": "Vision Projects",
+                    "text": "Through Lions SightFirst program, we've helped restore sight to millions and prevented blindness in communities worldwide."
+                },
+                "card2": {
+                    "title": "Disaster Response",
+                    "text": "When disasters strike, Lions are among the first to respond, providing immediate relief and long-term recovery support to affected communities."
+                },
+                "card3": {
+                    "title": "Youth Programs",
+                    "text": "Our Leo clubs and youth programs empower the next generation of leaders to make a positive impact in their communities."
+                }
             }
         }
     },

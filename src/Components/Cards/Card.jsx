@@ -25,9 +25,9 @@ const Card = () => {
           </div>
 
           <p className="text-sm text-info leading-relaxed">
-            Lions International District 325 K District Governor [Name] is guiding Lions with purpose and dedication.
+            Lions International District 325 K District Governor  Lion Durga Prasad Humagain is guiding Lions with purpose and dedication.
             Discover the vision and leadership that are shaping the future of service in our communities. Learn more
-            about DG [Name]'s mission and unwavering commitment to empowering lives.
+            about DG Lion Durga Prasad Humagain 's mission and unwavering commitment to empowering lives.
           </p>
 
           <a href="#" className="inline-block bg-button text-white text-sm font-semibold w-max py-2 px-4 rounded-md shadow-sm hover:brightness-110 transition">
@@ -59,7 +59,7 @@ const Card = () => {
           <p className="text-sm text-info leading-relaxed">
             Lions International District 325 K District Governor [Name] is guiding Lions with purpose and dedication.
             Discover the vision and leadership that are shaping the future of service in our communities. Learn more
-            about DG [Name]'s mission and unwavering commitment to empowering lives.
+            about DG  Lion Durga Prasad Humagain mission and unwavering commitment to empowering lives.
           </p>
 
           <a href="#" className="inline-block bg-button text-white text-sm font-semibold w-max py-2 px-4 rounded-md shadow-sm hover:brightness-110 transition">

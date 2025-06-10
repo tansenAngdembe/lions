@@ -18,7 +18,7 @@ const ClubCard = ({ clubs }) => {
           }}
         >
           <img 
-            src={`${BASE_DOC}${logoUrl}` || "/images/logo.svg"} 
+            src={`${BASE_DOC}/${logoUrl}` || "/images/logo.svg"} 
             alt="logo" 
             className="w-8 h-8 object-contain" 
           />

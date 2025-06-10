@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next"
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className='bg-footer p-2.5 sm:p-8 pb-2'>
+    <footer className='bg-primary p-2.5 sm:p-8 pb-2'>
       <div className='text-white flex flex-col md:flex-row items-start justify-between gap-8'>
 
         {/* Company Logo + Info */}

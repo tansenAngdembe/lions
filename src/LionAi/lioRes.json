@@ -1,0 +1,860 @@
+{
+  "querys": [
+    {     
+        "query": [
+          "how are you",
+          "how are you doing",
+          "are you okay",
+          "are you fine",
+          "how's it going",
+          "how do you feel",
+          "what's up",
+          "what are you doing",
+          "how's everything"
+        ],
+        "response": {
+          "en": "I'm doing great, thank you! I'm always here to help you. How can I assist you today?",
+          "np": "म एकदम राम्रो छु, धन्यवाद! म तपाईंलाई सघाउन सधैं तयार छु। आज म तपाईंलाई केमा सहायता गर्न सक्छु?",
+          "established": ""
+        }     
+      
+    },
+    {
+      "query": ["*"],  
+      "response": {
+        "en": "I'm sorry, I couldn't find an answer to that. Could you please rephrase your question or ask something related to Lions Clubs International?",
+        "np": "माफ गर्नुहोस्, म त्यो प्रश्नको उत्तर दिन सकिन। कृपया आफ्नो प्रश्नलाई फेरि स्पष्ट पारेर सोध्नुस् वा लायन्स क्लब्स इन्टरनेशनलसँग सम्बन्धित केही सोध्नुस्।"
+        
+      }
+    },
+    
+    {
+      "query": [
+        "what is your name",
+        "who are you",
+        "your name",
+        "are you lio",
+        "hi lio",
+        "hello lio",
+        "lio",
+        "hey lio",
+        "are you my assistant",
+        "what can you do",
+        "introduce yourself",
+        "who is lio",
+        "name"
+      ],
+      "response": {
+        "en": "I'm Lio, your AI assistant here to help with information, answer questions, and assist you with anything related to Lions Clubs and beyond.",
+        "np": "म लियो हुँ, तपाईंको एआई सहायक। म तपाईंलाई जानकारी दिन, प्रश्नहरूको उत्तर दिन र लायन्स क्लब्ससँग सम्बन्धित विषयहरूमा सहायता गर्न यहाँ छु।",
+        "established": "2025"      }
+    },
+    
+    {
+      "query": ["hi", "hello", "namaste", "नमस्ते"],
+      "response": {
+        "en": "Hello there! 😊 I'm Lio, your AI assistant for all things Lions International. How can I help you today?",
+        "np": "नमस्ते! 😊 म लायन्स इन्टरनेशनलको लागि आपको AI सहायक हुँ। म तपाईंलाई कसरी सहयोग गर्न सक्छु?",
+        "img": ""
+      }
+    },
+    {
+      "query": ["district governor", "जिल्ला गभर्नर"],
+      "response": {
+        "en": "The current District Governor is Lion Ujwal Boss.",
+        "np": "हालका जिल्ला गभर्नर लायन उज्वल बoss हुनुहुन्छ।",
+        "img": "https://lions325i.org.np/storage/team/2024/05/surya-kumar-kc_1716204523.jpg"
+      }
+    },
+    {
+      "query": [
+        "who am i",
+        "what is my name",
+        "my name",
+        "how old am i",
+        "my age",
+        "do you know me",
+        "tell me about me",
+        "what do you know about me",
+        "do you know my name",
+        "my email",
+        "my phone number",
+        "what’s my profile",
+        "my address",
+        "where do i live",
+        "my information",
+        "personal info",
+        "profile details",
+        "am i registered",
+        "show my data",
+        "about me"
+      ],
+      "response": {
+        "en": "I can only answer personal questions if you've shared that information with me or if it's stored in your profile. Please make sure you've logged in or provided your details.",
+        "np": "यदि तपाईंले आफ्नो व्यक्तिगत जानकारी मसँग साझा गर्नुभएको छ वा यो तपाईंको प्रोफाइलमा सुरक्षित गरिएको छ भने मात्र म त्यसबारे जवाफ दिन सक्छु। कृपया सुनिश्चित गर्नुहोस् कि तपाईं लगइन हुनुहुन्छ वा विवरणहरू प्रदान गर्नुभएको छ।",
+        "established": "",
+        "img": ""
+      }
+    },
+    {
+      "query": ["district head", "जिल्ला प्रमुख"],
+      "response": {
+        "en": "The current District Head is Lion Pankaj Agarwal.",
+        "np": "हालका जिल्ला प्रमुख लायन पंकज अग्रवाल हुनुहुन्छ।",
+        "img": "https://lions325i.org.np/storage/team/2024/05/surya-kumar-kc_1716204523.jpg"
+      }
+    },
+    {
+      "query": ["lion club", "club", "lion", "lions" ,"what is lion clubs", "members", "member"],
+      "response": {
+        "en": "Lions Clubs International is a global service organization of approximately 1.4 million members in 49,000 clubs, serving communities in over 200 countries and geographic areas. Lions Clubs focus on community service and humanitarian efforts, with a mission to improve health, well-being, strengthen communities, support those in need, and promote peace and international understanding.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल एक विश्वव्यापी सेवा संस्था हो जसको लगभग १.४ मिलियन सदस्यहरू ४९,००० क्लबहरूमा सदस्यता लिएका छन्, र २०० भन्दा बढी देश र भौगोलिक क्षेत्रहरूमा समुदायहरूको सेवा गर्दैछन्। लायन्स क्लबहरू समुदाय सेवा र मानवतावादी प्रयासहरूमा केन्द्रित छन्, जसको उद्देश्य स्वास्थ्य, भलाइ, समुदायहरूको सुदृढीकरण, जरुरतमन्दको सहयोग, र शान्ति र अन्तर्राष्ट्रिय समझदारी प्रवर्द्धन गर्नु हो।"
+      }
+    },
+    {
+      "query": ["focus area", "focus areas", "global causes", "service areas"],
+      "response": {
+        "en": "Lions Clubs work on diverse areas including:\n1. Vision Care: Providing eye care services and preventing blindness\n2. Childhood Cancer: Supporting children with cancer and their families\n3. Diabetes: Raising awareness and providing support\n4. Disaster Relief: Helping communities affected by natural disasters\n5. Environment: Protecting and preserving our planet\n6. Hunger: Fighting food insecurity and malnutrition\n7. Youth Development: Empowering young people through education and leadership",
+        "np": "लायन्स क्लबहरू निम्न क्षेत्रहरूमा काम गर्छन्:\n१. दृष्टि हेरचाह: आँखा हेरचाह सेवा र अन्धत्व रोकथाम\n२. बालकर्केट: कर्केट भएका बालबालिका र उनीहरूको परिवारलाई सहयोग\n३. मधुमेह: जागरूकता बढाउन र सहयोग प्रदान गर्न\n४. आपतकालीन राहत: प्राकृतिक प्रकोपबाट प्रभावित समुदायहरूलाई सहयोग\n५. वातावरण: हाम्रो ग्रहको संरक्षण र संरक्षण\n६. भोकमरी: खाद्य असुरक्षा र कुपोषण विरुद्ध लडाई\n७. युवा विकास: शिक्षा र नेतृत्व मार्फत युवाहरूलाई सशक्तिकरण"
+      }
+    },
+    {
+      "query": ["vision care", "eye care", "blindness"],
+      "response": {
+        "en": "Lions Clubs are known for their work in vision care. We provide eye care services, conduct vision screenings, and work to prevent blindness. Our vision care programs include providing eyeglasses, supporting eye surgeries, and raising awareness about eye health.",
+        "np": "लायन्स क्लबहरू दृष्टि हेरचाहमा आफ्नो कामको लागि परिचित छन्। हामी आँखा हेरचाह सेवा प्रदान गर्छौं, दृष्टि जाँच गर्छौं, र अन्धत्व रोकथामको लागि काम गर्छौं। हाम्रो दृष्टि हेरचाह कार्यक्रमहरूमा चश्मा प्रदान गर्ने, आँखा सर्जरीमा सहयोग गर्ने, र आँखा स्वास्थ्यको बारेमा जागरूकता बढाउने समावेश छ।"
+      }
+    },
+    {
+      "query": ["join", "become member", "membership", "how to join"],
+      "response": {
+        "en": "To join Lions Clubs International, you can:\n1. Contact your local Lions Club\n2. Visit our website to find a club near you\n3. Attend a club meeting as a guest\n4. Meet with club members to learn more\n5. Submit a membership application\n\nWe welcome individuals who are committed to serving their communities and making a positive impact.",
+        "np": "लायन्स क्लब्स इन्टरनेशनलमा सामेल हुन, तपाईं:\n१. आफ्नो स्थानीय लायन्स क्लबसँग सम्पर्क गर्न सक्नुहुन्छ\n२. तपाईंको नजिकैको क्लब भेट्न हाम्रो वेबसाइट भ्रमण गर्न सक्नुहुन्छ\n३. अतिथिको रूपमा क्लब बैठकमा सहभागी हुन सक्नुहुन्छ\n४. थप जान्न क्लब सदस्यहरूसँग भेट्न सक्नुहुन्छ\n५. सदस्यता आवेदन पेश गर्न सक्नुहुन्छ\n\nहामी आफ्नो समुदायहरूलाई सेवा गर्न र सकारात्मक प्रभाव पार्न प्रतिबद्ध व्यक्तिहरूलाई स्वागत गर्छौं।"
+      }
+    },
+    {
+      "query": ["youth", "leos", "young lions"],
+      "response": {
+        "en": "Lions Clubs International has several youth programs:\n1. Leos: For young people aged 12-30\n2. Young Lions: For members under 35\n3. Youth Exchange: International cultural exchange program\n4. Peace Poster Contest: Art competition for young people\n5. Youth Camps: Leadership and development programs",
+        "np": "लायन्स क्लब्स इन्टरनेशनलको कयौं युवा कार्यक्रमहरू छन्:\n१. लियो: १२-३० वर्षका युवाहरूको लागि\n२. यंग लायन्स: ३५ वर्ष मुनिका सदस्यहरूको लागि\n३. युवा विनिमय: अन्तर्राष्ट्रिय सांस्कृतिक विनिमय कार्यक्रम\n४. शान्ति पोस्टर प्रतियोगिता: युवाहरूको लागि कला प्रतियोगिता\n५. युवा शिविर: नेतृत्व र विकास कार्यक्रमहरू"
+      }
+    },
+    {
+      "query": ["environment", "environmental", "climate"],
+      "response": {
+        "en": "Lions Clubs are committed to environmental protection through:\n1. Tree planting initiatives\n2. Clean-up campaigns\n3. Recycling programs\n4. Environmental education\n5. Conservation projects\n\nWe work to create sustainable communities and protect our planet for future generations.",
+        "np": "लायन्स क्लबहरू वातावरण संरक्षणको लागि प्रतिबद्ध छन्:\n१. रूख रोप्ने पहलहरू\n२. सफा अभियानहरू\n३. पुनर्चक्रण कार्यक्रमहरू\n४. वातावरणीय शिक्षा\n५. संरक्षण परियोजनाहरू\n\nहामी स्थायी समुदायहरू सिर्जना गर्न र भविष्यका पुस्ताहरूको लागि हाम्रो ग्रहको संरक्षण गर्न काम गर्छौं।"
+      }
+    },
+    {
+      "query": ["disaster relief", "emergency", "disaster"],
+      "response": {
+        "en": "Lions Clubs provide disaster relief through:\n1. Emergency response teams\n2. Food and water distribution\n3. Shelter assistance\n4. Medical aid\n5. Long-term recovery support\n\nWe work with local communities and international partners to provide immediate and long-term assistance during and after disasters.",
+        "np": "लायन्स क्लबहरू आपतकालीन राहत प्रदान गर्छन्:\n१. आपतकालीन प्रतिक्रिया टोलीहरू\n२. खाना र पानी वितरण\n३. आश्रय सहयोग\n४. चिकित्सा सहयोग\n५. दीर्घकालीन पुनर्निर्माण सहयोग\n\nहामी आपदा दौरान र पछि तत्काल र दीर्घकालीन सहयोग प्रदान गर्न स्थानीय समुदायहरू र अन्तर्राष्ट्रिय साझेदारहरूसँग काम गर्छौं।"
+      }
+    },
+    {
+      "query": [
+        "lion club 1",
+        "club 1",
+        "lion 1",
+        "what is lion clubs 1",
+        "members 1",
+        "member 1"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917"      
+      }
+    },
+    {
+      "query": [
+        "lcif 2",
+        "lions clubs international foundation 2",
+        "lion foundation 2",
+        "lcif grant 2"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968"
+       
+      }
+    },
+    {
+      "query": [
+        "melvin jones 3",
+        "who founded lions club 3",
+        "lions club founder 3"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lion club 4",
+        "club 4",
+        "lion 4",
+        "what is lion clubs 4",
+        "members 4",
+        "member 4"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lcif 5",
+        "lions clubs international foundation 5",
+        "lion foundation 5",
+        "lcif grant 5"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 6",
+        "who founded lions club 6",
+        "lions club founder 6"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lion club 7",
+        "club 7",
+        "lion 7",
+        "what is lion clubs 7",
+        "members 7",
+        "member 7"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lcif 8",
+        "lions clubs international foundation 8",
+        "lion foundation 8",
+        "lcif grant 8"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 9",
+        "who founded lions club 9",
+        "lions club founder 9"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lion club 10",
+        "club 10",
+        "lion 10",
+        "what is lion clubs 10",
+        "members 10",
+        "member 10"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lcif 11",
+        "lions clubs international foundation 11",
+        "lion foundation 11",
+        "lcif grant 11"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 12",
+        "who founded lions club 12",
+        "lions club founder 12"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lion club 13",
+        "club 13",
+        "lion 13",
+        "what is lion clubs 13",
+        "members 13",
+        "member 13"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lcif 14",
+        "lions clubs international foundation 14",
+        "lion foundation 14",
+        "lcif grant 14"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 15",
+        "who founded lions club 15",
+        "lions club founder 15"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lion club 16",
+        "club 16",
+        "lion 16",
+        "what is lion clubs 16",
+        "members 16",
+        "member 16"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917"
+      }
+    },
+    {
+      "query": [
+        "lcif 17",
+        "lions clubs international foundation 17",
+        "lion foundation 17",
+        "lcif grant 17"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 18",
+        "who founded lions club 18",
+        "lions club founder 18"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 19",
+        "club 19",
+        "lion 19",
+        "what is lion clubs 19",
+        "members 19",
+        "member 19"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 20",
+        "lions clubs international foundation 20",
+        "lion foundation 20",
+        "lcif grant 20"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 21",
+        "who founded lions club 21",
+        "lions club founder 21"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 22",
+        "club 22",
+        "lion 22",
+        "what is lion clubs 22",
+        "members 22",
+        "member 22"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 23",
+        "lions clubs international foundation 23",
+        "lion foundation 23",
+        "lcif grant 23"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 24",
+        "who founded lions club 24",
+        "lions club founder 24"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 25",
+        "club 25",
+        "lion 25",
+        "what is lion clubs 25",
+        "members 25",
+        "member 25"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 26",
+        "lions clubs international foundation 26",
+        "lion foundation 26",
+        "lcif grant 26"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 27",
+        "who founded lions club 27",
+        "lions club founder 27"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 28",
+        "club 28",
+        "lion 28",
+        "what is lion clubs 28",
+        "members 28",
+        "member 28"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 29",
+        "lions clubs international foundation 29",
+        "lion foundation 29",
+        "lcif grant 29"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 30",
+        "who founded lions club 30",
+        "lions club founder 30"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 31",
+        "club 31",
+        "lion 31",
+        "what is lion clubs 31",
+        "members 31",
+        "member 31"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 32",
+        "lions clubs international foundation 32",
+        "lion foundation 32",
+        "lcif grant 32"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 33",
+        "who founded lions club 33",
+        "lions club founder 33"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 34",
+        "club 34",
+        "lion 34",
+        "what is lion clubs 34",
+        "members 34",
+        "member 34"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 35",
+        "lions clubs international foundation 35",
+        "lion foundation 35",
+        "lcif grant 35"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 36",
+        "who founded lions club 36",
+        "lions club founder 36"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 37",
+        "club 37",
+        "lion 37",
+        "what is lion clubs 37",
+        "members 37",
+        "member 37"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 38",
+        "lions clubs international foundation 38",
+        "lion foundation 38",
+        "lcif grant 38"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 39",
+        "who founded lions club 39",
+        "lions club founder 39"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 40",
+        "club 40",
+        "lion 40",
+        "what is lion clubs 40",
+        "members 40",
+        "member 40"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 41",
+        "lions clubs international foundation 41",
+        "lion foundation 41",
+        "lcif grant 41"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 42",
+        "who founded lions club 42",
+        "lions club founder 42"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 43",
+        "club 43",
+        "lion 43",
+        "what is lion clubs 43",
+        "members 43",
+        "member 43"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 44",
+        "lions clubs international foundation 44",
+        "lion foundation 44",
+        "lcif grant 44"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 45",
+        "who founded lions club 45",
+        "lions club founder 45"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 46",
+        "club 46",
+        "lion 46",
+        "what is lion clubs 46",
+        "members 46",
+        "member 46"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 47",
+        "lions clubs international foundation 47",
+        "lion foundation 47",
+        "lcif grant 47"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    },
+    {
+      "query": [
+        "melvin jones 48",
+        "who founded lions club 48",
+        "lions club founder 48"
+      ],
+      "response": {
+        "en": "Melvin Jones, a Chicago businessman, founded Lions Clubs International in 1917 to encourage service-minded individuals to improve their communities.",
+        "np": "मेल्भिन जोन्स, शिकागोका एक व्यवसायी, ले १९१७ मा लायन्स क्लब्स इन्टरनेशनल स्थापना गरे, सेवा–मुखी व्यक्तिहरूलाई समुदायको सुधारमा प्रेरित गर्न।",
+        "established": "1917",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2021-02/Who-We-Are-Melvin-Jones.jpg"
+      }
+    },
+    {
+      "query": [
+        "lion club 49",
+        "club 49",
+        "lion 49",
+        "what is lion clubs 49",
+        "members 49",
+        "member 49"
+      ],
+      "response": {
+        "en": "Lions Clubs International is a global service organization with 1.4 million members in 49,000 clubs serving in 200+ countries.",
+        "np": "लायन्स क्लब्स इन्टरनेशनल विश्वव्यापी सेवा संस्था हो, जसमा ४९,००० क्लबहरूमा १.४ मिलियन सदस्यहरू छन्, र २०० भन्दा बढी देशहरूमा सेवा गर्छन्।",
+        "established": "1917",
+        "img": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Lions_Clubs_International_logo.svg/1200px-Lions_Clubs_International_logo.svg.png"
+      }
+    },
+    {
+      "query": [
+        "lcif 50",
+        "lions clubs international foundation 50",
+        "lion foundation 50",
+        "lcif grant 50"
+      ],
+      "response": {
+        "en": "LCIF is the charitable arm of Lions International, funding humanitarian efforts globally. It has awarded over $1 billion in grants.",
+        "np": "एलसीआईएफ लायन्स इन्टरनेशनलको परोपकारी शाखा हो, जसले विश्वभरमा मानवतावादी कार्यक्रमहरूलाई सहयोग पुर्‍याउँछ। यसले १ अर्ब डलरभन्दा बढी अनुदान प्रदान गरिसकेको छ।",
+        "established": "1968",
+        "img": "https://www.lionsclubs.org/sites/default/files/styles/scale_and_crop_1200x675/public/2020-06/LCIF-Hero.jpg"
+      }
+    }
+  ]
+}
