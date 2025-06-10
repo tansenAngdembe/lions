@@ -70,7 +70,7 @@ const Nav = () => {
     { label:t("header.home"), link: "/" },
     {
       label:  t("header.teams.title"),
-      link: "/currentDgTeam",
+
       submenu: [
         {
           title:  t("header.teams.digi-team.heading"),
