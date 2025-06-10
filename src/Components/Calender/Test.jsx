@@ -51,7 +51,7 @@ const Test = () => {
   }
 
   return (
-    <div className="bg-[#4185c1] p-4 md:w-full h-max xl:h-max">
+    <div className="min-h-full bg-[#FAB130] p-4 md:w-full h-max xl:h-max">
       <h1 className="text-center text-4xl text-black font-bold">
         {t("body.calender")}
       </h1>

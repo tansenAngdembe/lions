@@ -4,8 +4,8 @@
         "teams": {
             "title": "Our Team",
             "digi-team": {
-                "heading": "Digi Team",
-                "current": "Current Digi Team",
+                "heading": "DG Team",
+                "current": "Current DG Team",
                 "past-governer": "Past District Governer"
             },
             "cabinet-officials": {
@@ -15,7 +15,7 @@
                 "region": "Region Chairperson",
                 "zone": "Zone Chairperson",
                 "global": "Global Causes Team",
-                "digi-program": "Digi Program Team"
+                "digi-program": "DG Program Team"
             },
             "leo-district": {
                 "heading": "Leo District",
